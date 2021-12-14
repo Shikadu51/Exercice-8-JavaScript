@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Site du juste prix</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width ,initial-scale-1">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+     <div class="container">
+         <div class="row ">
+            <h1>Bienvenue sur le site du juste prix :</h1>
+             <div class="col-sm 3 mx-auto mt-5 text center">
+                <div class="mb-6">
+                    <div id="objet"></div>
+                    <div id="nom-objet"></div>
+                    <br>
+                </div>
+                 <div class="mb-6">
+                     <label for="prix-propose" class="form-label">Proposez un prix entre 1 et 100 euros :</label>
+                     <input type="number" class="form-control" id="prix-propose" aria-describedby="prix-propose">
+                     <div class="form-text">Trouvez le juste prix pour gagner cet objet !</div>
+                     <div class="form-text" id="nombre-tentative"></div>
+                 </div>
+                 <button type="submit" id="button" class="btn btn-primary mt-5 mb-5" >Proposer</button>
+             </div>
+         </div>
+         <div class="row">
+            <div class="col-sm 3 mx-auto mt-5 text center">
+                <div id="message"></div> 
+            </div>
+        </div>
+     </div>
+    </body>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+</html>

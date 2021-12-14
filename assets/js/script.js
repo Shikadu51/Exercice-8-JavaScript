@@ -36,21 +36,21 @@
 
     prixdonne = document.getElementById('prix-propose').value;
  if(nombretentative == 0){
-    affichertentative.innerHTML = "Vous avez encore " + nombretentative + "tentatives.";
+    affichertentative.innerHTML = "Vous avez encore " + nombretentative + " tentatives.";
     message.innerHTML = "Désolé vous avez perdu !<br> Le juste prix était de " + prixatrouve + " euros.";
     bouton.disabled= true;
    }else{
    }if(prixdonne > prixatrouve){
-       message.innerHTML = "Non c'est moins .";
+       message.innerHTML = "Non c'est moins.";
        nombretentative--;
-       affichagetentative.innerHTML = "Vous avez encore " + nombretentative + "tentatives.";
+       affichagetentative.innerHTML = "Vous avez encore " + nombretentative + " tentatives.";
    }if(prixdonne < prixatrouve){
-       message.innerHTML = "Non c'est plus .";
+       message.innerHTML = "Non c'est plus.";
        nombretentative--;
-       affichagetentative.innerHTML = "Vous avez encore " + nombretentative + "tentatives.";
+       affichagetentative.innerHTML = "Vous avez encore " + nombretentative + " tentatives.";
    }if(prixdonne == prixatrouve){
     message.innerHTML = "Bonne réponse. Bravo!";
-    affichagetentative.innerHTML = "Vous avez trouvez le juste prix en " + nombretentative + "tentatives.";
+    affichagetentative.innerHTML = "Vous avez trouvez le juste prix en " + nombretentative + " tentatives.";
     bouton.disabled = true;
    }
   }

@@ -1,7 +1,7 @@
  //Déclarer mes variables.
 
- const objet = ['un ballon','un casque','un livre','une manette','un sac'];
- const nomobjet = ['ballon.jpg', 'casque.jpg', 'livre.jpg', 'manette.jpg', 'sac.jpg'];
+ const nomobjet = ['un ballon','un casque','un livre','une manette','un sac'];
+ const objet = ['ballon.jpg', 'casque.jpg', 'livre.jpg', 'manette.jpg', 'sac.jpg'];
  let prixdonne;
  let prixatrouve;
  let nombrealea;
@@ -9,7 +9,7 @@
  let image = document.getElementById('objet');
  let nomimage = document.getElementById('nom-objet');
  let message = document.getElementById('message');
- let bouton = document.getElementById('bouton');
+ let bouton = document.getElementById('button');
  let affichagetentative = document.getElementById('nombre-tentative');
  
  function genererunchiffre(valeurmax){
@@ -25,8 +25,8 @@
     return '<img src="assets/image/' + valeur + '"class="img-fluid" width="30%" alt="Responsive image">';
  }
 
-    image.innerHTML = afficherimage(photoobjet[nombrealea]);
-    nomimage.innerHTML = objet[nombrealea];
+    image.innerHTML = afficherimage(objet[nombrealea]);
+    nomimage.innerHTML = nomobjet[nombrealea];
     nombretentative = 10;
     affichagetentative.innerHTML = "Vous avez encore " + nombretentative + " tentatives.";
 

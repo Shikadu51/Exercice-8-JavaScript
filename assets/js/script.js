@@ -50,7 +50,7 @@
        affichagetentative.innerHTML = "Vous avez encore " + nombretentative + " tentatives.";
    }if(prixdonne == prixatrouve){
     message.innerHTML = "Bonne réponse. Bravo!";
-    affichagetentative.innerHTML = "Vous avez trouvez le juste prix en " + nombretentative + " tentatives.";
+    affichagetentative.innerHTML = "Vous avez trouvez le juste prix alors qu'il vous restez " + nombretentative + " tentatives.";
     bouton.disabled = true;
    }
   }
